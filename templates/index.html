@@ -1,0 +1,87 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+  <h3>Generate a Password</h3>
+  <br>
+  <form action="/passwords">
+    <!-- Min length -->
+    <div class="form-group">
+      <label for="minSWLen">Min single word length</label>
+      <select id="minSWLenId" name="minSWLen">
+        <option value="0"></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+    </div>
+    <!-- Max length -->
+    <div class="form-group">
+      <label for="maxSWLen">Max single word length</label>
+      <select id="maxSWLenId" name="maxSWLen" value="">
+        <option value="0"></option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <!-- Add more later?????? -->
+      </select>
+    </div>
+    <!-- Maximum overall length -->
+    <div class="form-group">
+      <label for="maxOverAll">Max overall word length</label>
+      <select id="maxOverAllId" name="maxOverAll" value="">
+        <option value="0"></option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+      </select>
+    </div>
+
+    <!-- Letter for number substitution -->
+    <div class="form-group row">
+      <div class="col-sm-2">Letter for number substitution</div>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="letNumSubId" name="letNumSub">
+        </div>
+      </div>
+    </div>
+    <!-- Word style -->
+    <div class="form-group row">
+      <div class="col-sm-2">Easy typing</div>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="easyTypeId" name="easyTyping">
+        </div>
+      </div>
+    </div>
+  <!-- Submit form button -->
+    <input type="submit" value="Submit">
+  </form>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+  <h1>ERROR</h1>
+  <p>There was an error with your form. Either:
+    <ul>
+      <li>No minimum single word length was specified</li>
+      <li>No maximum single word length was specified</li>
+      <li>No maximum overall word length was specified</li>
+      <li>The minimum indicated single word length is greater than the maximum
+        word length (or vice versa)</li>
+      <li>The maximum single word length is greater than the overall single word length</li>
+      <li>The minimum singe word length  * 4 is greater than the overall word length</li>
+    </ul>
+  <p>Please check your form and try again.</p>
+  <img src="https://dingo.care2.com/pictures/greenliving/1031/1030574.large.jpg" alt="Friendly goat">
+  <br>
+  <br>
+  <form action="/">
+    <input type="submit" value="Back to form">
+  </form>
+{% endblock content %}
