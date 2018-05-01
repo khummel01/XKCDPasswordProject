@@ -1,0 +1,13 @@
+/*Purpose: Custom styles for XKCDPasswordProject*/
+
+@charset "utf-8";
+
+body {
+	font-family: 'Crimson Text', serif;
+	font-size: 150%;
+}
+
+#formId {
+	margin-left: 30px;
+}
+
