@@ -3,4 +3,6 @@
 - Implement a checkbox to enable letter for number substitution in the passwords
 - Display passwords in a table using templates
 - Use the bootstrap plugin for flask to improve the look and feel.
-- Do ONE of the following: * implement options for "easy typing" passwords * implement options for adjective, noun, verb, adverb style
+- Do ONE of the following:
+  - Implement options for "easy typing" passwords
+  - Implement options for adjective, noun, verb, adverb style
